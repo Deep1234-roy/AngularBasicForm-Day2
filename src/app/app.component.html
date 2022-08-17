@@ -1,0 +1,31 @@
+<div class="header">
+  <p>ABC SCHOOL PVT LTD</p>
+</div>
+<div class="content">
+  <h2>Registration Form</h2>
+  <hr style="width: 70%;margin-left: 50px;color: black;">
+  
+  <div class="row">
+    <div class="col-lg-3 offset-1">
+        <div class="form-group">
+            <label>First Name :- </label>
+            <input #fname class="form-control" [(ngModel)]="FirstNameValue" >
+        </div>
+        <br>
+        <div class="form-group">
+          <label>Last Name : - </label>
+          <input #lname class="form-control" [(ngModel)]="LastNameValue">
+      </div>
+      <div class="form-group">
+        <br>
+        <button class="btn btn-primary" value="Submit" (click)="PassData(fname.value,lname.value)">Submit</button>&nbsp;
+        <button class="btn btn-info" value="Reset" (click)="ResetFunctionality()">Reset</button>&nbsp;
+        <button class="btn btn-danger" value="Delete" (click)="DeleteData()">Delete</button>
+    </div>
+    </div>
+    <div>
+      <app-child [fnameData]="firstName" [lnameData]="lastName"></app-child>
+    </div>
+  </div>
+</div>
+

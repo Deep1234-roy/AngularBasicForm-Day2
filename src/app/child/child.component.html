@@ -1,0 +1,19 @@
+<br>
+<div style="margin-left: 50px;width: 520px;">
+    <h3 style="color: red">Employee List : - </h3>
+    <hr>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+
+    </thead>
+    <tbody *ngFor="let emp of listArray">
+        <td>{{emp.fname}}</td>
+        <td>{{emp.lname}}</td>
+    </tbody>
+
+</table>
+</div>

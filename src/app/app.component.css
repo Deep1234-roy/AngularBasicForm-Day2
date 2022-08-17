@@ -1,0 +1,16 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+.content{
+    background-color: skyblue;
+    height: 550px;
+}
+h2{
+    margin-left: 50px;
+    color: tomato;
+    padding-top: 20px;
+}
